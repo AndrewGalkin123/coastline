@@ -1,4 +1,6 @@
 import React from "react";
+import BurgerMenu from "../../BurgerMenu/BurgerMenu"
+import './Header.css'
 
 const Header = () => { 
     return(
