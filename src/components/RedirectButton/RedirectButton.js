@@ -1,7 +1,7 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 
-const ButtonWithRedirect = ({ to, children }) => {
+const RedirectButton = ({ to, children }) => {
   const history = useHistory();
 
   const handleClick = () => {
@@ -11,4 +11,4 @@ const ButtonWithRedirect = ({ to, children }) => {
   return <button className="photos_link" onClick={handleClick}>{children}</button>;
 };
 
-export default ButtonWithRedirect;
+export default RedirectButton;

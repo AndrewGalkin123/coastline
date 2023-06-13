@@ -7,3 +7,35 @@
 html {
     scroll-behavior: smooth;
 }
+.title {
+    position: relative;
+    text-align: center;
+    height: 24px;
+}
+
+
+.title span {
+    display: inline-block;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 500;
+    color: #111111;
+    padding: 0 20px;
+    background-color: #fff;
+}
+
+.title hr {
+    border: 0 solid;
+    border-bottom: 1px solid #dfdfdf;
+    float: left;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: -15px;
+}
+
+.content {
+    position: relative;
+    width: 94%;
+    margin: 0 auto 0 auto;
+
+}

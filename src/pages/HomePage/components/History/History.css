@@ -1,0 +1,12 @@
+.box {
+
+    font-family: 'Poppins', sans-serif;
+    box-shadow: -1px 0 10px #000000;
+    text-align: center;
+}
+
+@media (max-width: 970px) {
+    .box:nth-child(-n+2) {
+        display: none;
+    }
+}

@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import RedirectButton from "../../../../components/RedirectButton/RedirectButton"
+import odessaFerrisWheel from "../../../../assets/cultureImages/odessa-ferris-wheel.jpg"
+
 
 const Culture = () => {
     const [photoItemHeight, setPhotoItemHeight] = useState(0);
@@ -90,7 +92,7 @@ const Culture = () => {
                         </a>
                     </div>
                 </div>
-                    <RedirectButton to="">Смотреть все фото</RedirectButton>
+                <RedirectButton to="#">Смотреть все фото</RedirectButton>
             </div>
         </div>
     )
