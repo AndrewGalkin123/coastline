@@ -1,5 +1,7 @@
 import React from 'react';
-import RedirectButton from "../RedirectButton/RedirectButton"
+import "./PhotoGallery.css"
+import RedirectButton from "../../../../components/RedirectButton/RedirectButton"
+import descentCoast from "../../../../assets/photoGalleryImages/descent-coast.jpg"
 
 
 const PhotoGallery = () => { 
@@ -88,10 +90,11 @@ const PhotoGallery = () => {
             </div>
           </div>
         </div>
+        
         <p style={{ textAlign: "center" }}>
-          <a href='' className='photos_link'>Смотреть все фото (10)</a>
-        </p>
-        <RedirectButton to="">Смотреть все фото</RedirectButton>
+                <RedirectButton></RedirectButton>
+            </p>
+
       </div>
       </div>
     )

@@ -1,14 +1,16 @@
 import React from "react";
-import { useHistory } from "react-router-dom";
+import "./RedirectButton.css"
+import { useNavigate } from "react-router-dom";
 
 const RedirectButton = ({ to, children }) => {
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const handleClick = () => {
-    history.push(to);
+    navigate(to);
   };
 
   return <button className="photos_link" onClick={handleClick}>{children}</button>;
 };
 
 export default RedirectButton;
+
