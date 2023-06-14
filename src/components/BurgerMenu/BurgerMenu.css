@@ -25,7 +25,7 @@ ul li {
     width: 35px;
     height: 5px;
     background-color: #fff;
-    transition-duration: .2s;
+    transition-duration: .35s;
 
 }
 
@@ -54,13 +54,13 @@ ul li {
     justify-content: center;
     position: fixed;
     visibility: hidden;
-    top: 64px;
+    top: 61px;
     right: -100%;
     width: 250px;
     height: 400px;
     margin: 0;
     list-style: none;
-    background-color: rgba(37, 83, 125, 0.9);
+    background-color: rgba(19, 69, 115, 0.9);
     transition-duration: .3s;
 }
 
@@ -68,7 +68,7 @@ ul li {
     font-family: Arial, sans-serif;
     color: white;
     margin: 0 0 15px ;
-    font-size: 20px;
+    font-size: 16px;
     text-decoration: none;
     transition-duration: .25s;
     border-bottom: 4px solid transparent;

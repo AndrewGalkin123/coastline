@@ -1,10 +1,12 @@
 import React from "react";
 import BurgerMenu from "../../BurgerMenu/BurgerMenu"
 import './Header.css'
+import logo from "./anchor.png"
 
 const Header = () => { 
     return(
         <header>
+          <a href="/"><img id="main-logo" src={logo}></img></a>
         <nav>
           <ul>
             <li>

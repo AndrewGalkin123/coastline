@@ -4,10 +4,10 @@ import RedirectButton from "../../../../components/RedirectButton/RedirectButton
 import descentCoast from "../../../../assets/photoGalleryImages/descent-coast.jpg"
 
 
-const PhotoGallery = () => { 
-    return(
-        <div style={{justifyContent: 'center'}} id="photoGallery">
-        <div>
+const PhotoGallery = () => {
+  return (
+    <div style={{ justifyContent: 'center' }} id="photoGallery">
+      <div>
         <br />
         <div className="title">
           <hr />
@@ -90,14 +90,14 @@ const PhotoGallery = () => {
             </div>
           </div>
         </div>
-        
+
         <p style={{ textAlign: "center" }}>
-                <RedirectButton></RedirectButton>
-            </p>
+          <RedirectButton to="/">Смотреть все фото (10)</RedirectButton>
+        </p>
 
       </div>
-      </div>
-    )
+    </div>
+  )
 }
 
 export default PhotoGallery;

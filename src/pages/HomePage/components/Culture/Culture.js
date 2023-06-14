@@ -47,7 +47,7 @@ const Culture = () => {
             letterSpacing: "16px",
             marginBottom: "20px",
             overflow: "hidden",
-            height: "640px" // Add "px" to specify the height correctly
+            height: "640px"
           }}
         >
           <div style={{ position: "absolute", left: "-20px", top: "0", right: "-20px" }}>
@@ -95,8 +95,8 @@ const Culture = () => {
         </div>
 
         <p style={{ textAlign: "center" }}>
-                <RedirectButton></RedirectButton>
-            </p>
+          <RedirectButton to="/">Смотреть все фото (10)</RedirectButton>
+        </p>
       </div>
     </div>
   );
