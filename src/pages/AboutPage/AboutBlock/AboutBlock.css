@@ -1,0 +1,12 @@
+.avatar {
+    width: 500px;
+    height: 600px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.text {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #515151;
+}

@@ -73,13 +73,13 @@ ul li {
     transition-duration: .25s;
     border-bottom: 4px solid transparent;
     box-sizing: border-box;
-    width: 200px;
+    width: 220px;
     text-align: center;
 }
 
 .menu-item:hover {
     border-bottom: 4px solid #72de6f;
-    width: 200px;
+    width: 220px;
     color: #72de6f;
 }
 
