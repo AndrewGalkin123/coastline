@@ -7,7 +7,7 @@ const Collections = () => {
         <div className="collections">
             <div className="title">
                 <hr />
-                <span style={{backgroundColor: "rgb(200, 197, 197)", color: "white"}}>Коллекции</span>
+                <span style={{backgroundColor: "rgb(233, 233, 233)"}}>Коллекции</span>
             </div>
             <div className='collection-items'>
                 <a href=''>

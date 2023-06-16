@@ -1,50 +1,37 @@
 .about-block {
     position: relative;
     top: 100px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .avatar {
-    width: 33%;
-    height: 550px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    min-height: 500px;
     object-fit: cover;
     margin-right: 20px;
     float: left;
-  
 }
 
-.text {
-    text-align: justify;
+
+
+
+
+
+@media (max-width: 992px) {
+    .avatar {
+        float: none;
+        margin-right: 0;
+        margin-bottom: 20px;
+        max-width: 100%;
+    }
     
 }
 
-.contact-info {
-    margin-top: 10px;
-
-}
-
 @media (max-width: 768px) {
-    .avatar {
-        width: 50%;
-        margin-right: 20px;
+    .about-block {
+        top: 50px;
     }
-
-    .text {
-        margin-top: 0;
-    }
-}
-
-@media (max-width: 992px) {
- 
-
-    .avatar {
-        width: 40%;
-    }
-}
-
-@media (max-width: 1360px) {
-    .avatar {
-        width: 30%;
-    }
-  
-
 }
