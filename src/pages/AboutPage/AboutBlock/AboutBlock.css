@@ -1,12 +1,50 @@
-.avatar {
-    width: 500px;
-    height: 600px;
-    object-fit: cover;
-    margin-right: 20px;
+.about-block {
+    position: relative;
+    top: 100px;
 }
 
-.about-text {
-    margin-top: 20px;
-    font-size: 20px;
-    color: #515151;
+.avatar {
+    width: 33%;
+    height: 550px;
+    object-fit: cover;
+    margin-right: 20px;
+    float: left;
+  
+}
+
+.text {
+    text-align: justify;
+    
+}
+
+.contact-info {
+    margin-top: 10px;
+
+}
+
+@media (max-width: 768px) {
+    .avatar {
+        width: 50%;
+        margin-right: 20px;
+    }
+
+    .text {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 992px) {
+ 
+
+    .avatar {
+        width: 40%;
+    }
+}
+
+@media (max-width: 1360px) {
+    .avatar {
+        width: 30%;
+    }
+  
+
 }
