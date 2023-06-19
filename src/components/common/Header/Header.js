@@ -2,6 +2,7 @@ import React from "react";
 import BurgerMenu from "../../BurgerMenu/BurgerMenu"
 import './Header.css'
 import logo from "./anchor.png"
+import phoneIcon from "../../../assets/icons/icon-phone-call-5585856.png"
 
 const Header = () => { 
     return(
@@ -26,7 +27,7 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-
+        <a className="contact-info"><img src={phoneIcon}></img></a>
         <BurgerMenu />
       </header>
     )
