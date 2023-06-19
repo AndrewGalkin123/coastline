@@ -6,7 +6,7 @@ import Culture from "./components/Culture/Culture";
 import PhotoGallery from "./components/PhotoGallery/PhotoGallery";
 import OdessaMap from "./components/OdessaMap/OdessaMap";
 import Slider from "./components/Slider/Slider";
-import Collections from "./components/Collections/Collections";
+
 
 const HomePage = () => {
     return (
@@ -18,7 +18,7 @@ const HomePage = () => {
                 <Culture></Culture>
                 <OdessaMap></OdessaMap>
                 <PhotoGallery></PhotoGallery>
-                <Collections></Collections>
+            
             </main>
             <Footer></Footer>
         </div>

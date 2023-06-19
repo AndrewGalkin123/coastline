@@ -10,7 +10,7 @@ const Header = () => {
         <nav>
           <ul>
             <li>
-              <a className="navigation-link" href="#history">
+              <a className="navigation-link" href="/history">
                 История
               </a>
             </li>

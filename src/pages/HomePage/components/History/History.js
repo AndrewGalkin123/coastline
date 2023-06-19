@@ -52,7 +52,7 @@ const History = () => {
                 </a>
             </div>
             <p style={{ textAlign: "center" }}>
-                <RedirectButton to="/">Смотреть все фото (10)</RedirectButton>
+                <RedirectButton to="/history">Смотреть все фото (10)</RedirectButton>
             </p>
         </div>
     )

@@ -4,28 +4,6 @@ import RedirectButton from "../../../../components/RedirectButton/RedirectButton
 import odessaFerrisWheel from "../../../../assets/cultureImages/odessa-ferris-wheel.jpg";
 
 const Culture = () => {
-  const [photoItemHeight, setPhotoItemHeight] = useState(0);
-
-  useEffect(() => {
-    window.addEventListener("resize", photoUpdate);
-    photoUpdate();
-
-    return () => {
-      window.removeEventListener("resize", photoUpdate);
-    };
-  }, []);
-
-  const photoUpdate = () => {
-    const photoItemElement = document.querySelector("#culture_photos_index .photo_item");
-    if (photoItemElement) {
-      const newPhotoItemHeight = photoItemElement.clientHeight;
-      if (newPhotoItemHeight !== photoItemHeight) {
-        setPhotoItemHeight(newPhotoItemHeight, () => {
-          document.querySelector("#culture_photos_index").style.height = `${newPhotoItemHeight * 2 + 38}px`;
-        });
-      }
-    }
-  };
 
   return (
     <div id="culture">

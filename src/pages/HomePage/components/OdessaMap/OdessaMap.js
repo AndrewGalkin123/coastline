@@ -24,7 +24,7 @@ const OdessaMap = () => {
   };
 
   return (
-    <div style={{ justifyContent: "center" }}>
+    <div style={{ justifyContent: "center", marginBottom: "25px" }}>
       <div>
         <br />
         <div className="title">
