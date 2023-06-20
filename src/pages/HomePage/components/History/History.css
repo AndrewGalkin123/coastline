@@ -1,9 +1,23 @@
 .box {
 
     font-family: 'Poppins', sans-serif;
-    box-shadow: -1px 0 10px #000000;
+  
     text-align: center;
 }
+
+.box img {
+    border-radius: 10px;
+  
+}
+
+.box p{ 
+    text-align: left
+   
+}
+
+
+
+
 
 @media (max-width: 970px) {
     .box:nth-child(-n+2) {

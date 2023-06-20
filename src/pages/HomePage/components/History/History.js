@@ -20,10 +20,9 @@ const History = () => {
             <div className="content" style={{ maxWidth: "1500px", display: "flex", flexWrap: "wrap", justifyContent: "space-around", padding: "0 15px" , marginBottom: "20px"}}>
                 <a href="" className="box" style={{ margin: "15px 15px 0 15px", flex: "1 1 320px", minWidth: "300px", maxWidth: "100%", textDecoration: "none", color: "black" }}>
                     <img src={pavelCathedral} style={{ width: "100%", height: "470px", objectFit: "cover", objectPosition: "center" }} />
-                    <h2>Кафедральный Собор Св. Павла</h2>
+                    <h2>Лютеранская церковь</h2>
                     <p>Величие веры и архитектурное великолепие.
-                        Красивый фасад с колоннами и портиками, внутри – потрясающие фрески и орнаменты. Место поклонения и религиозных мероприятий, привлекающее туристов в Одессу.
-
+                        Кафедральный собор святого Павла в Одессе является не только религиозным центром, но и символом исторического и культурного наследия города, восхищающим посетителей своей величественностью и уникальной архитектурой.
                     </p>
                 </a>
                 <a href="" className="box" style={{ margin: "15px 15px 0 15px", flex: "1 1 320px", minWidth: "300px", maxWidth: "100%", textDecoration: "none", color: "black" }}>
@@ -38,7 +37,7 @@ const History = () => {
                 <a href="" className="box" style={{ margin: "15px 15px 0 15px", flex: "1 1 320px", minWidth: "300px", maxWidth: "100%", textDecoration: "none", color: "black" }}>
                     <img src={vorontsovLighthouse} style={{ width: "100%", height: "470px", objectFit: "cover", objectPosition: "top" }} />
                     <h2>Воронцовский маяк</h2>
-                    <p>Исторический символ и морская достопримечательность. Этот величественный маяк, построенный в 19 веке, предоставляет незабываемый вид на Чёрное море.
+                    <p>Исторический символ и морская достопримечательность. Этот маяк, построенный в 19 веке, предоставляет незабываемый вид на Чёрное море.
                         Он служит ориентиром для мореплавателей и вдохновляет посетителей своей красотой и романтикой морской атмосферы.
 
                     </p>
