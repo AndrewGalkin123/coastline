@@ -9,6 +9,9 @@
     justify-content: flex-start;
     margin-bottom: 10px;
     transition: all .3s;
+   border-radius: 3px;
+    padding: 10px;
+   
 }
 
 .photo_list_item:hover{
@@ -21,6 +24,7 @@
     width: 40%;
     height: 200px;
     float: right;
+ 
 }
 
 .photo_list_item.even {
@@ -33,5 +37,26 @@
     justify-content: center;
     padding: 0 10px;
     width: 60%;
+   
     /* Adjust the width to leave space for the image */
+}
+
+@media (max-width: 768px) {
+    .photo_list_item.even {
+        flex-direction: column;
+      }
+    
+    .photo_list_item {
+        flex-direction: column;
+    }
+  
+    .photo_list_item img {
+        width: 100%;
+        float: none;
+        margin-bottom: 10px;
+    }
+  
+    .photo_list_item span {
+        width: 100%;
+    }
 }

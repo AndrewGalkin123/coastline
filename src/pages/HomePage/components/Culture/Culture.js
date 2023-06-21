@@ -73,7 +73,7 @@ const Culture = () => {
         </div>
 
         <p style={{ textAlign: "center" }}>
-          <RedirectButton to="/">Смотреть все фото (10)</RedirectButton>
+          <RedirectButton to="/culture">Смотреть все фото (10)</RedirectButton>
         </p>
       </div>
     </div>
