@@ -96,7 +96,7 @@ nav ul li {
     background-color: #38b434;
   }
 
-.contact-info{
+.contacts-info{
     position: absolute;
     right: 65px;
     top: 10px;
@@ -105,12 +105,12 @@ nav ul li {
     
 }
 
-.contact-info:hover { 
+.contacts-info:hover { 
     background-color: #38b434;
     border-radius: 10px;
 }
 
-.contact-info img{ 
+.contacts-info img{ 
 
     width: 40px;
     height: 40px;

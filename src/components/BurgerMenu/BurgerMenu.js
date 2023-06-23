@@ -15,7 +15,7 @@ const BurgerMenu = () => {
                     <li><a className="menu-item" href="#">Новости</a></li>
                     <li><a className="menu-item" href="/about">История проекта</a></li>
                     <li><a className="menu-item" href="#">Наша команда</a></li>
-                    <li><a className="menu-item" href="#contact">Контакты</a></li>
+                    <li><a className="menu-item" href="/contacts">Контакты</a></li>
                 </ul>
             </div>
         )

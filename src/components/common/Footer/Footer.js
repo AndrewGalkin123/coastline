@@ -12,7 +12,7 @@ const Footer = () => {
                             <li><a href="/about">О нас</a></li>
                             <li><a href="#">Наша команда</a></li>
                             <li><a href="/about">История проекта</a></li>
-                            <li><a href="#">Контакты</a></li>
+                            <li><a href="/contacts">Контакты</a></li>
                         </ul>
                     </div>
                     <div className="footer-col">

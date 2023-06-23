@@ -27,7 +27,7 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-        <a className="contact-info"><img src={phoneIcon}></img></a>
+        <a className="contacts-info" href="/contacts"><img src={phoneIcon}></img></a>
         <BurgerMenu />
       </header>
     )
