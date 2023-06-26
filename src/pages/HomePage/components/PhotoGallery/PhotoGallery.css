@@ -42,8 +42,9 @@
     left: 50%;
     top: 90%;
     transform: translateY(-90%) translateX(-50%);
+    font-family: "Open Sans", Arial, sans-serif;
     color: #fff;
-    font-size: 25px;
+    font-size: 20px;
     z-index: 4;
     display: block;
     height: auto;

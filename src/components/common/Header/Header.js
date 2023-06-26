@@ -7,7 +7,7 @@ import phoneIcon from "../../../assets/icons/icon-phone-call-5585856.png"
 const Header = () => { 
     return(
         <header>
-          <a href="/"><img id="main-logo" src={logo}></img></a>
+          <a href="/"><img id="main-logo" src={logo} alt="logo"></img></a>
         <nav>
           <ul>
             <li>
@@ -16,18 +16,18 @@ const Header = () => {
               </a>
             </li>
             <li>
-              <a className="navigation-link" href="#culture">
+              <a className="navigation-link" href="/culture">
                 Культура
               </a>
             </li>
             <li>
-              <a className="navigation-link" href="#photoGallery">
+              <a className="navigation-link" href="/photogallery">
                 Фотогалерея
               </a>
             </li>
           </ul>
         </nav>
-        <a className="contacts-info" href="/contacts"><img src={phoneIcon}></img></a>
+        <a className="contacts-info" href="/contacts"><img src={phoneIcon} alt="contacts"></img></a>
         <BurgerMenu />
       </header>
     )
