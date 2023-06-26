@@ -7,7 +7,8 @@ const Footer = () => {
             <div className="container">
                 <div className="row">
                     <div className="footer-col">
-                        <h4>Компания</h4>
+                        <h4>История компании<p>Контактная информация</p></h4>
+                        
                         <ul>
                             <li><a href="/about">О нас</a></li>
                             <li><a href="#">Наша команда</a></li>
@@ -16,21 +17,21 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div className="footer-col">
-                        <h4>Текст</h4>
+                        <h4>Информация о городе и достопримечательности</h4>
                         <ul>
-                            <li><a href="#">Текст</a></li>
-                            <li><a href="#">Текст</a></li>
-                            <li><a href="#">Текст</a></li>
-                            <li><a href="#">Текст</a></li>
+                            <li><a href="#">Информация о городе</a></li>
+                            <li><a href="#">Городские достопримечательности</a></li>
+                            <li><a href="#">Места для посещения</a></li>
                         </ul>
                     </div>
                     <div className="footer-col">
-                        <h4>Текст</h4>
+                        <h4>Ссылки и дополнительная информация</h4>
                         <ul>
-                            <li><a href="#">Текст</a></li>
-                            <li><a href="#">Текст</a></li>
-                            <li><a href="#">Текст</a></li>
-                            <li><a href="#">Текст</a></li>
+                            <li><a href="#">Полезные ссылки</a></li>
+                            <li><a href="#">Условия использования</a></li>
+                            <li><a href="#">Политика конфиденциальности</a></li>
+                            <li><a href="#">Авторские права</a></li>
+                            <li><a href="#">Вопросы и ответы (FAQ)</a></li>
                         </ul>
                     </div>
                     <div className="footer-col">
