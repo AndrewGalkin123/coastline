@@ -4,11 +4,9 @@ import Header from "../../components/common/Header/Header";
 import Footer from "../../components/common/Footer/Footer";
 import odessaFerrisWheel from "../../assets/cultureImages/odessa-ferris-wheel.jpg"
 
+
 const PhotoGalleryPage = () => {
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-  
-
 
     useEffect(() => {
         const handleResize = () => {
@@ -53,153 +51,204 @@ const PhotoGalleryPage = () => {
                     borderBottom: "1px solid"
                 }}
             ></hr>
-            <div className="content" style={{ maxWidth: "1900px", top: "30px" }}>
+            <div className="content" style={{ maxWidth: "1650px", top: "30px" }}>
 
                 <div
-                    className="photo_item_container"
+                    className="photogallery_item_container"
                     style={{ position: "relative", marginBottom: "100px" }}
                 >
-                    <a className="photo_item" style={{width: "10%", minHeight: "230px", minWidth: "230px"}}>
-                        <img className="picture" src={odessaFerrisWheel} alt="descent coast" />
-                        <span className="photo_block-item"></span>
-                        <span className="photo_item_title">Одесса, Черноморск</span>
-                    </a>
-                    <a className="photo_item" style={{width: "10%", minHeight: "230px", minWidth: "230px"}}>
-                        <img className="picture" src={odessaFerrisWheel} alt="descent coast" />
-                        <span className="photo_block-item"></span>
-                        <span className="photo_item_title">Одесса, Черноморск</span>
-                    </a>
-                    <a className="photo_item" style={{width: "10%", minHeight: "230px", minWidth: "230px"}}>
-                        <img className="picture" src={odessaFerrisWheel} alt="descent coast" />
-                        <span className="photo_block-item"></span>
-                        <span className="photo_item_title">Одесса, Черноморск</span>
-                    </a>
-                    <a className="photo_item" style={{width: "10%", minHeight: "230px", minWidth: "230px"}}>
-                        <img className="picture" src={odessaFerrisWheel} alt="descent coast" />
-                        <span className="photo_block-item"></span>
-                        <span className="photo_item_title">Одесса, Черноморск</span>
-                    </a>
-                    <a className="photo_item" style={{width: "10%", minHeight: "230px", minWidth: "230px"}}>
-                        <img className="picture" src={odessaFerrisWheel} alt="descent coast" />
-                        <span className="photo_block-item"></span>
-                        <span className="photo_item_title">Одесса, Черноморск</span>
-                    </a>
-                    <a className="photo_item" style={{width: "10%", minHeight: "230px", minWidth: "230px"}}>
-                        <img className="picture" src={odessaFerrisWheel} alt="descent coast" />
-                        <span className="photo_block-item"></span>
-                        <span className="photo_item_title">Одесса, Черноморск</span>
-                    </a>
-                    <a className="photo_item" style={{width: "10%", minHeight: "230px", minWidth: "230px"}}>
-                        <img className="picture" src={odessaFerrisWheel} alt="descent coast" />
-                        <span className="photo_block-item"></span>
-                        <span className="photo_item_title">Одесса, Черноморск</span>
-                    </a>
-                    <a className="photo_item" style={{width: "10%", minHeight: "230px", minWidth: "230px"}}>
-                        <img className="picture" src={odessaFerrisWheel} alt="descent coast" />
-                        <span className="photo_block-item"></span>
-                        <span className="photo_item_title">Одесса, Черноморск</span>
-                    </a>
-                    <a className="photo_item" style={{width: "10%", minHeight: "230px", minWidth: "230px"}}>
-                        <img className="picture" src={odessaFerrisWheel} alt="descent coast" />
-                        <span className="photo_block-item"></span>
-                        <span className="photo_item_title">Одесса, Черноморск</span>
-                    </a>
-                    <a className="photo_item" style={{width: "10%", minHeight: "230px", minWidth: "230px"}}>
-                        <img className="picture" src={odessaFerrisWheel} alt="descent coast" />
-                        <span className="photo_block-item"></span>
-                        <span className="photo_item_title">Одесса, Черноморск</span>
-                    </a>
-                    <a className="photo_item" style={{width: "10%", minHeight: "230px", minWidth: "230px"}}>
-                        <img className="picture" src={odessaFerrisWheel} alt="descent coast" />
-                        <span className="photo_block-item"></span>
-                        <span className="photo_item_title">Одесса, Черноморск</span>
-                    </a>
-                    <a className="photo_item" style={{width: "10%", minHeight: "230px", minWidth: "230px"}}>
-                        <img className="picture" src={odessaFerrisWheel} alt="descent coast" />
-                        <span className="photo_block-item"></span>
-                        <span className="photo_item_title">Одесса, Черноморск</span>
-                    </a>
-                    <a className="photo_item" style={{width: "10%", minHeight: "230px", minWidth: "230px"}}>
-                        <img className="picture" src={odessaFerrisWheel} alt="descent coast" />
-                        <span className="photo_block-item"></span>
-                        <span className="photo_item_title">Одесса, Черноморск</span>
-                    </a>
-                    <a className="photo_item" style={{width: "10%", minHeight: "230px", minWidth: "230px"}}>
-                        <img className="picture" src={odessaFerrisWheel} alt="descent coast" />
-                        <span className="photo_block-item"></span>
-                        <span className="photo_item_title">Одесса, Черноморск</span>
-                    </a>
-                    <a className="photo_item" style={{width: "10%", minHeight: "230px", minWidth: "230px"}}>
-                        <img className="picture" src={odessaFerrisWheel} alt="descent coast" />
-                        <span className="photo_block-item"></span>
-                        <span className="photo_item_title">Одесса, Черноморск</span>
-                    </a>
-                    <a className="photo_item" style={{width: "10%", minHeight: "230px", minWidth: "230px"}}>
-                        <img className="picture" src={odessaFerrisWheel} alt="descent coast" />
-                        <span className="photo_block-item"></span>
-                        <span className="photo_item_title">Одесса, Черноморск</span>
-                    </a>
-                    <a className="photo_item" style={{width: "10%", minHeight: "230px", minWidth: "230px"}}>
-                        <img className="picture" src={odessaFerrisWheel} alt="descent coast" />
-                        <span className="photo_block-item"></span>
-                        <span className="photo_item_title">Одесса, Черноморск</span>
-                    </a>
-                    <a className="photo_item" style={{width: "10%", minHeight: "230px", minWidth: "230px"}}>
-                        <img className="picture" src={odessaFerrisWheel} alt="descent coast" />
-                        <span className="photo_block-item"></span>
-                        <span className="photo_item_title">Одесса, Черноморск</span>
-                    </a>
-                    <a className="photo_item" style={{width: "10%", minHeight: "230px", minWidth: "230px"}}>
-                        <img className="picture" src={odessaFerrisWheel} alt="descent coast" />
-                        <span className="photo_block-item"></span>
-                        <span className="photo_item_title">Одесса, Черноморск</span>
-                    </a>
-                    <a className="photo_item" style={{width: "10%", minHeight: "230px", minWidth: "230px"}}>
-                        <img className="picture" src={odessaFerrisWheel} alt="descent coast" />
-                        <span className="photo_block-item"></span>
-                        <span className="photo_item_title">Одесса, Черноморск</span>
-                    </a>
-                    <a className="photo_item" style={{width: "10%", minHeight: "230px", minWidth: "230px"}}>
-                        <img className="picture" src={odessaFerrisWheel} alt="descent coast" />
-                        <span className="photo_block-item"></span>
-                        <span className="photo_item_title">Одесса, Черноморск</span>
-                    </a>
-                    <a className="photo_item" style={{width: "10%", minHeight: "230px", minWidth: "230px"}}>
-                        <img className="picture" src={odessaFerrisWheel} alt="descent coast" />
-                        <span className="photo_block-item"></span>
-                        <span className="photo_item_title">Одесса, Черноморск</span>
-                    </a>
-                    <a className="photo_item" style={{width: "10%", minHeight: "230px", minWidth: "230px"}}>
-                        <img className="picture" src={odessaFerrisWheel} alt="descent coast" />
-                        <span className="photo_block-item"></span>
-                        <span className="photo_item_title">Одесса, Черноморск</span>
-                    </a>
-                    <a className="photo_item" style={{width: "10%", minHeight: "230px", minWidth: "230px"}}>
-                        <img className="picture" src={odessaFerrisWheel} alt="descent coast" />
-                        <span className="photo_block-item"></span>
-                        <span className="photo_item_title">Одесса, Черноморск</span>
-                    </a>
-                    <a className="photo_item" style={{width: "10%", minHeight: "230px", minWidth: "230px"}}>
-                        <img className="picture" src={odessaFerrisWheel} alt="descent coast" />
-                        <span className="photo_block-item"></span>
-                        <span className="photo_item_title">Одесса, Черноморск</span>
-                    </a>
-                    <a className="photo_item" style={{width: "10%", minHeight: "230px", minWidth: "230px"}}>
-                        <img className="picture" src={odessaFerrisWheel} alt="descent coast" />
-                        <span className="photo_block-item"></span>
-                        <span className="photo_item_title">Одесса, Черноморск</span>
-                    </a>
-                    <a className="photo_item" style={{width: "10%", minHeight: "230px", minWidth: "230px"}}>
-                        <img className="picture" src={odessaFerrisWheel} alt="descent coast" />
-                        <span className="photo_block-item"></span>
-                        <span className="photo_item_title">Одесса, Черноморск</span>
-                    </a>
-                    <a className="photo_item" style={{width: "10%", minHeight: "230px", minWidth: "230px"}}>
-                        <img className="picture" src={odessaFerrisWheel} alt="descent coast" />
-                        <span className="photo_block-item"></span>
-                        <span className="photo_item_title">Одесса, Черноморск</span>
-                    </a>
-
+                    <div class="photogallery_item">
+                        <figure class="photogallery_effect">
+                            <img src={odessaFerrisWheel} alt="odessaferriswheel" />
+                            <figcaption>
+                                <p>Одесса, Колесо Обозрения</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="photogallery_item">
+                        <figure class="photogallery_effect">
+                            <img src={odessaFerrisWheel} alt="odessaferriswheel" />
+                            <figcaption>
+                                <p>Одесса, Колесо Обозрения</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="photogallery_item">
+                        <figure class="photogallery_effect">
+                            <img src={odessaFerrisWheel} alt="odessaferriswheel" />
+                            <figcaption>
+                                <p>Одесса, Колесо Обозрения</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="photogallery_item">
+                        <figure class="photogallery_effect">
+                            <img src={odessaFerrisWheel} alt="odessaferriswheel" />
+                            <figcaption>
+                                <p>Одесса, Колесо Обозрения</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="photogallery_item">
+                        <figure class="photogallery_effect">
+                            <img src={odessaFerrisWheel} alt="odessaferriswheel" />
+                            <figcaption>
+                                <p>Одесса, Колесо Обозрения</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="photogallery_item">
+                        <figure class="photogallery_effect">
+                            <img src={odessaFerrisWheel} alt="odessaferriswheel" />
+                            <figcaption>
+                                <p>Одесса, Колесо Обозрения</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="photogallery_item">
+                        <figure class="photogallery_effect">
+                            <img src={odessaFerrisWheel} alt="odessaferriswheel" />
+                            <figcaption>
+                                <p>Одесса, Колесо Обозрения</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="photogallery_item">
+                        <figure class="photogallery_effect">
+                            <img src={odessaFerrisWheel} alt="odessaferriswheel" />
+                            <figcaption>
+                                <p>Одесса, Колесо Обозрения</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="photogallery_item">
+                        <figure class="photogallery_effect">
+                            <img src={odessaFerrisWheel} alt="odessaferriswheel" />
+                            <figcaption>
+                                <p>Одесса, Колесо Обозрения</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="photogallery_item">
+                        <figure class="photogallery_effect">
+                            <img src={odessaFerrisWheel} alt="odessaferriswheel" />
+                            <figcaption>
+                                <p>Одесса, Колесо Обозрения</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="photogallery_item">
+                        <figure class="photogallery_effect">
+                            <img src={odessaFerrisWheel} alt="odessaferriswheel" />
+                            <figcaption>
+                                <p>Одесса, Колесо Обозрения</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="photogallery_item">
+                        <figure class="photogallery_effect">
+                            <img src={odessaFerrisWheel} alt="odessaferriswheel" />
+                            <figcaption>
+                                <p>Одесса, Колесо Обозрения</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="photogallery_item">
+                        <figure class="photogallery_effect">
+                            <img src={odessaFerrisWheel} alt="odessaferriswheel" />
+                            <figcaption>
+                                <p>Одесса, Колесо Обозрения</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="photogallery_item">
+                        <figure class="photogallery_effect">
+                            <img src={odessaFerrisWheel} alt="odessaferriswheel" />
+                            <figcaption>
+                                <p>Одесса, Колесо Обозрения</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="photogallery_item">
+                        <figure class="photogallery_effect">
+                            <img src={odessaFerrisWheel} alt="odessaferriswheel" />
+                            <figcaption>
+                                <p>Одесса, Колесо Обозрения</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="photogallery_item">
+                        <figure class="photogallery_effect">
+                            <img src={odessaFerrisWheel} alt="odessaferriswheel" />
+                            <figcaption>
+                                <p>Одесса, Колесо Обозрения</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="photogallery_item">
+                        <figure class="photogallery_effect">
+                            <img src={odessaFerrisWheel} alt="odessaferriswheel" />
+                            <figcaption>
+                                <p>Одесса, Колесо Обозрения</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="photogallery_item">
+                        <figure class="photogallery_effect">
+                            <img src={odessaFerrisWheel} alt="odessaferriswheel" />
+                            <figcaption>
+                                <p>Одесса, Колесо Обозрения</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="photogallery_item">
+                        <figure class="photogallery_effect">
+                            <img src={odessaFerrisWheel} alt="odessaferriswheel" />
+                            <figcaption>
+                                <p>Одесса, Колесо Обозрения</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="photogallery_item">
+                        <figure class="photogallery_effect">
+                            <img src={odessaFerrisWheel} alt="odessaferriswheel" />
+                            <figcaption>
+                                <p>Одесса, Колесо Обозрения</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="photogallery_item">
+                        <figure class="photogallery_effect">
+                            <img src={odessaFerrisWheel} alt="odessaferriswheel" />
+                            <figcaption>
+                                <p>Одесса, Колесо Обозрения</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="photogallery_item">
+                        <figure class="photogallery_effect">
+                            <img src={odessaFerrisWheel} alt="odessaferriswheel" />
+                            <figcaption>
+                                <p>Одесса, Колесо Обозрения</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="photogallery_item">
+                        <figure class="photogallery_effect">
+                            <img src={odessaFerrisWheel} alt="odessaferriswheel" />
+                            <figcaption>
+                                <p>Одесса, Колесо Обозрения</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="photogallery_item">
+                        <figure class="photogallery_effect">
+                            <img src={odessaFerrisWheel} alt="odessaferriswheel" />
+                            <figcaption>
+                                <p>Одесса, Колесо Обозрения</p>
+                            </figcaption>
+                        </figure>
+                    </div>
                 </div>
 
 
