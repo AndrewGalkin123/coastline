@@ -31,7 +31,7 @@ const Footer = () => {
                             <li><a href="#">Условия использования</a></li>
                             <li><a href="#">Политика конфиденциальности</a></li>
                             <li><a href="#">Авторские права</a></li>
-                            <li><a href="#">Вопросы и ответы (FAQ)</a></li>
+                            <li><a href="/faq">Вопросы и ответы (FAQ)</a></li>
                         </ul>
                     </div>
                     <div className="footer-col">
