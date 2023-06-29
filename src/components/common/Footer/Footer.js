@@ -7,7 +7,7 @@ const Footer = () => {
             <div className="container">
                 <div className="row">
                     <div className="footer-col">
-                        <h4>История компании<p>Контактная информация</p></h4>
+                        <h4>История компании<br></br>Контактная информация</h4>
                         
                         <ul>
                             <li><a href="/about">О нас</a></li>
@@ -28,9 +28,9 @@ const Footer = () => {
                         <h4>Ссылки и дополнительная информация</h4>
                         <ul>
                             <li><a href="#">Полезные ссылки</a></li>
-                            <li><a href="#">Условия использования</a></li>
-                            <li><a href="#">Политика конфиденциальности</a></li>
-                            <li><a href="#">Авторские права</a></li>
+                            <li><a href="/termsofuse">Условия использования</a></li>
+                            <li><a href="/privacypolicy">Политика конфиденциальности</a></li>
+                            <li><a href="/termsofuse">Авторские права</a></li>
                             <li><a href="/faq">Вопросы и ответы (FAQ)</a></li>
                         </ul>
                     </div>
