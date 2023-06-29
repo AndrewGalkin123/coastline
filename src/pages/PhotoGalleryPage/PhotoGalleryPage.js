@@ -3,6 +3,7 @@ import "./PhotoGalleryPage.css"
 import Header from "../../components/common/Header/Header";
 import Footer from "../../components/common/Footer/Footer";
 import odessaFerrisWheel from "../../assets/cultureImages/odessa-ferris-wheel.jpg"
+import BackToTopButton from "../../components/BackToTopButton/BackToTopButton";
 
 
 const PhotoGalleryPage = () => {
@@ -255,6 +256,7 @@ const PhotoGalleryPage = () => {
             </div>
 
             <Footer></Footer>
+            <BackToTopButton></BackToTopButton>
         </div>
     )
 }

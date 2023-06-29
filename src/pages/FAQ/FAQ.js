@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Header from "../../components/common/Header/Header";
 import Footer from "../../components/common/Footer/Footer";
 import "./FAQ.css";
+import BackToTopButton from "../../components/BackToTopButton/BackToTopButton";
 
 const FAQ = () => {
   const [activeAccordion, setActiveAccordion] = useState(null);
@@ -244,6 +245,7 @@ const FAQ = () => {
         </div>
       </div>
       <Footer />
+      <BackToTopButton></BackToTopButton>
     </div>
   );
 };

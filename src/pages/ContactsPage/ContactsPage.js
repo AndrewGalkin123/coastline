@@ -2,6 +2,7 @@ import React from 'react';
 import './ContactsPage.css';
 import Header from '../../components/common/Header/Header';
 import Footer from '../../components/common/Footer/Footer';
+import BackToTopButton from '../../components/BackToTopButton/BackToTopButton';
 import axios from 'axios';
 
 const ContactsPage = () => {
@@ -35,7 +36,7 @@ const ContactsPage = () => {
           <div className='contact-info'>
             <div className='item'>
               <i className='icon fas fa-home'></i>
-              Odessa, Ukraine
+              Одесса, Украина
             </div>
             <div className='item'>
               <i className='icon fas fa-phone'></i>
@@ -47,7 +48,7 @@ const ContactsPage = () => {
             </div>
             <div className='item'>
               <i className='icon fas fa-clock'></i>
-              Mon - Fri 10:00 AM to 6:00 PM
+              Пн - Пт 10:00 to 18:00 
             </div>
           </div>
           <form className='contact-form' onSubmit={submitForm}>
@@ -59,6 +60,7 @@ const ContactsPage = () => {
         </div>
       </div>
       <Footer />
+      <BackToTopButton></BackToTopButton>
     </div>
   );
 };

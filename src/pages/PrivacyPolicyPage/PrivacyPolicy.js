@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../../components/common/Header/Header";
 import Footer from "../../components/common/Footer/Footer";
 import "./PrivacyPolicy.css"
+import BackToTopButton from "../../components/BackToTopButton/BackToTopButton";
 
 const PrivacyPolicy = () => {
     return (
@@ -71,6 +72,7 @@ const PrivacyPolicy = () => {
             </div>
 
             <Footer />
+            <BackToTopButton></BackToTopButton>
         </div>
     );
 };
