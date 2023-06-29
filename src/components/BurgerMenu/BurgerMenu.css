@@ -56,8 +56,8 @@ ul li {
     visibility: hidden;
     top: 61px;
     right: -100%;
-    width: 250px;
-    height: 400px;
+    width: 280px;
+    height: 470px;
     margin: 0;
     list-style: none;
     background-color: rgba(19, 69, 115, 0.9);
@@ -65,10 +65,10 @@ ul li {
 }
 
 .menu-item {
-    font-family: Arial, sans-serif;
+    font-family: "Open Sans", Arial, sans-serif;
     color: white;
-    margin: 0 0 15px ;
-    font-size: 16px;
+    margin: 0 0 15px;
+    font-size: 18px;
     text-decoration: none;
     transition-duration: .25s;
     border-bottom: 4px solid transparent;
@@ -80,7 +80,7 @@ ul li {
 .menu-item:hover {
     border-bottom: 4px solid #72de6f;
     width: 220px;
-    color: #72de6f;
+
 }
 
 #menu-toggle {
@@ -105,4 +105,3 @@ ul li {
     visibility: visible;
     right: 0;
 }
-

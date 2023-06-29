@@ -10,12 +10,16 @@ const BurgerMenu = () => {
                 </label>
 
                 <ul className="menubox">
-                    <li><a className="menu-item" href="#">Наши услуги</a></li>
                     <li><a className="menu-item" href="/about">О нас</a></li>
-                    <li><a className="menu-item" href="#">Новости</a></li>
-                    <li><a className="menu-item" href="/about">История проекта</a></li>
-                    <li><a className="menu-item" href="#">Наша команда</a></li>
-                    <li><a className="menu-item" href="/contacts">Контакты</a></li>
+                    <li><a className="menu-item" href="/about">История Проекта</a></li>
+                    <li><a className="menu-item" href="#">Информация о городе</a></li>
+                    <li><a className="menu-item" href="#">Наша Команда</a></li>
+                    <li><a className="menu-item" href="#">Полезные ссылки</a></li>
+                    <li><a className="menu-item" href="/contacts">Связаться с нами</a></li>
+                    <li><a className="menu-item" href="/faq">Вопросы и ответы (FAQ)</a></li>
+                    <li><a className="menu-item" href="/termsofuse">Условия Использования</a></li>
+                    <li><a className="menu-item" href="/termsofuse">Авторские права</a></li>
+                    
                 </ul>
             </div>
         )
