@@ -9,6 +9,7 @@ import PhotoGalleryPage from './pages/PhotoGalleryPage/PhotoGalleryPage';
 import FAQ from './pages/FAQ/FAQ';
 import PrivacyPolicy from './pages/PrivacyPolicyPage/PrivacyPolicy';
 import UseTerms from './pages/UseTermsPage/Useterms';
+import AboutOdessa from './pages/AboutOdessaPage/AboutOdessa';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/faq" element={<FAQ />} />
           <Route path="/privacypolicy" element={<PrivacyPolicy />} />
           <Route path="/termsofuse" element={<UseTerms />} />
+          <Route path='/aboutodessa' element={<AboutOdessa />} />
         </Routes>
       </div>
     </Router>

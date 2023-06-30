@@ -19,9 +19,9 @@ const Footer = () => {
                     <div className="footer-col">
                         <h4>Информация о городе и достопримечательности</h4>
                         <ul>
-                            <li><a href="#">Информация о городе</a></li>
-                            <li><a href="#">Городские достопримечательности</a></li>
-                            <li><a href="#">Места для посещения</a></li>
+                            <li><a href="/aboutodessa">Информация о городе</a></li>
+                            <li><a href="/history">Городские достопримечательности</a></li>
+                            <li><a href="/photogallery">Места для посещения</a></li>
                         </ul>
                     </div>
                     <div className="footer-col">

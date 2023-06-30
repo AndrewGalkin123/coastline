@@ -12,8 +12,8 @@ const BurgerMenu = () => {
                 <ul className="menubox">
                     <li><a className="menu-item" href="/about">О нас</a></li>
                     <li><a className="menu-item" href="/about">История Проекта</a></li>
-                    <li><a className="menu-item" href="#">Информация о городе</a></li>
-                    <li><a className="menu-item" href="#">Наша Команда</a></li>
+                    <li><a className="menu-item" href="/aboutodessa">Информация о городе</a></li>
+                    <li><a className="menu-item" href="/about">Наша Команда</a></li>
                     <li><a className="menu-item" href="#">Полезные ссылки</a></li>
                     <li><a className="menu-item" href="/contacts">Связаться с нами</a></li>
                     <li><a className="menu-item" href="/faq">Вопросы и ответы (FAQ)</a></li>
