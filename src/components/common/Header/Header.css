@@ -79,7 +79,7 @@ nav ul li {
 .translator-button {
     position: absolute;
     top: 50%;
-    right: 80px;
+    right: 105px;
     transform: translateY(-50%);
     height: 40px;
     width: 40px;
@@ -91,29 +91,30 @@ nav ul li {
     cursor: pointer;
     z-index: 10;
     border-radius: 4px;
-  }
-  
-  .translator-button:hover {
-    background-color: #38b434;
-  }
+}
 
-.contacts-info{
+.translator-button:hover {
+    background-color: #38b434;
+}
+
+
+.contacts-info {
     position: absolute;
     right: 65px;
     top: 10px;
     width: 40px;
     height: 40px;
-    
+
 }
 
-.contacts-info:hover { 
+.contacts-info:hover {
     background-color: #38b434;
-    border-radius: 10px;
+    border-radius: 4px;
 }
 
-.contacts-info img{ 
+.contacts-info img {
 
     width: 40px;
     height: 40px;
-   
+
 }

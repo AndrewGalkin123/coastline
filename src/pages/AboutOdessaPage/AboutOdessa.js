@@ -1,14 +1,11 @@
 import React from "react";
-import Header from "../../components/common/Header/Header"
-import Footer from "../../components/common/Footer/Footer"
 import odessaFlag from "./odessaFlag.png"
 import "./AboutOdessa.css"
-import BackToTopButton from "../../components/BackToTopButton/BackToTopButton"
+
 
 const AboutOdessa = () => {
     return (
         <div>
-            <Header></Header>
             <div className="title" style={{ top: "90px" }}>
                 <hr />
                 <span>Информация про Одессу</span>
@@ -64,11 +61,7 @@ const AboutOdessa = () => {
                         </p>
                     </div>
                 </div>
-
-
             </div>
-            <Footer></Footer>
-            <BackToTopButton/>
         </div>
     )
 }

@@ -1,8 +1,5 @@
 import React from 'react';
 import './ContactsPage.css';
-import Header from '../../components/common/Header/Header';
-import Footer from '../../components/common/Footer/Footer';
-import BackToTopButton from '../../components/BackToTopButton/BackToTopButton';
 import axios from 'axios';
 
 const ContactsPage = () => {
@@ -29,7 +26,6 @@ const ContactsPage = () => {
 
   return (
     <div>
-      <Header />
       <div className='contacts-page'>
         <div className='contact-page'>
           <h2>Oddyssea</h2>
@@ -59,8 +55,6 @@ const ContactsPage = () => {
           </form>
         </div>
       </div>
-      <Footer />
-      <BackToTopButton></BackToTopButton>
     </div>
   );
 };

@@ -1,0 +1,78 @@
+{
+  "header": {
+    "ru": {
+      "history": "История",
+      "culture": "Культура",
+      "photogallery": "Фотогалерея"
+    },
+    "uk": {
+      "history": "Історія",
+      "culture": "Культура",
+      "photogallery": "Фотогалерея"
+    },
+    "en": {
+      "history": "History",
+      "culture": "Culture",
+      "photogallery": "Photo Gallery"
+    }
+  },
+  "footer": {
+    "ru": {
+      "companyHistory": "История компании",
+      "contactInformation": "Контактная информация",
+      "aboutUs": "О нас",
+      "ourTeam": "Наша команда",
+      "projectHistory": "История проекта",
+      "contacts": "Контакты",
+      "cityInfo": "Информация о городе и достопримечательности",
+      "cityInfoDesc": "Информация о городе",
+      "cityAttractions": "Городские достопримечательности",
+      "placesToVisit": "Места для посещения",
+      "linksAndInfo": "Ссылки и дополнительная информация",
+      "usefulLinks": "Полезные ссылки",
+      "termsOfUse": "Условия использования",
+      "privacyPolicy": "Политика конфиденциальности",
+      "copyright": "Авторские права",
+      "faq": "Вопросы и ответы (FAQ)",
+      "socialLinks": "Наши соцсети"
+    },
+    "uk": {
+      "companyHistory": "Історія компанії",
+      "contactInformation": "Контактна інформація",
+      "aboutUs": "Про нас",
+      "ourTeam": "Наша команда",
+      "projectHistory": "Історія проекту",
+      "contacts": "Контакти",
+      "cityInfo": "Інформація про місто та визначні місця",
+      "cityInfoDesc": "Інформація про місто",
+      "cityAttractions": "Визначні місця міста",
+      "placesToVisit": "Місця для відвідування",
+      "linksAndInfo": "Посилання та додаткова інформація",
+      "usefulLinks": "Корисні посилання",
+      "termsOfUse": "Умови використання",
+      "privacyPolicy": "Політика конфіденційності",
+      "copyright": "Авторські права",
+      "faq": "Питання та відповіді (FAQ)",
+      "socialLinks": "Наші соціальні мережі"
+    },
+    "en": {
+      "companyHistory": "Company History",
+      "contactInformation": "Contact Information",
+      "aboutUs": "About Us",
+      "ourTeam": "Our Team",
+      "projectHistory": "Project History",
+      "contacts": "Contacts",
+      "cityInfo": "City Information and Attractions",
+      "cityInfoDesc": "City Information",
+      "cityAttractions": "City Attractions",
+      "placesToVisit": "Places to Visit",
+      "linksAndInfo": "Links and Additional Information",
+      "usefulLinks": "Useful Links",
+      "termsOfUse": "Terms of Use",
+      "privacyPolicy": "Privacy Policy",
+      "copyright": "Copyright",
+      "faq": "Frequently Asked Questions (FAQ)",
+      "socialLinks": "Our Social Links"
+    }
+  }
+}

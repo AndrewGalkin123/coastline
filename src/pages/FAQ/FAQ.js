@@ -1,8 +1,5 @@
 import React, { useState } from "react";
-import Header from "../../components/common/Header/Header";
-import Footer from "../../components/common/Footer/Footer";
 import "./FAQ.css";
-import BackToTopButton from "../../components/BackToTopButton/BackToTopButton";
 
 const FAQ = () => {
   const [activeAccordion, setActiveAccordion] = useState(null);
@@ -13,7 +10,6 @@ const FAQ = () => {
 
   return (
     <div>
-      <Header />
       <div className="content" style={{ maxWidth: "1300px" }}>
         <div className="faq_wrapper">
           <h1>Самые часто задаваемые вопросы</h1>
@@ -244,8 +240,6 @@ const FAQ = () => {
           </div>
         </div>
       </div>
-      <Footer />
-      <BackToTopButton></BackToTopButton>
     </div>
   );
 };

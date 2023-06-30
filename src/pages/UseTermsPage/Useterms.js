@@ -1,13 +1,8 @@
 import React from "react";
-import Header from "../../components/common/Header/Header";
-import Footer from "../../components/common/Footer/Footer";
 import "./UseTerms.css"
-import BackToTopButton from "../../components/BackToTopButton/BackToTopButton";
-
 const UseTerms = () => {
     return (
         <div className="use_terms">
-            <Header></Header>
             <div className="content" style={{ maxWidth: "1400px", top: "100px", marginBottom: "150px" }}>
                 <h1>Условия использования</h1>
                 <p>
@@ -60,8 +55,6 @@ const UseTerms = () => {
                     свяжитесь с нами по указанным контактным данным.
                 </p>
             </div>
-            <Footer></Footer>
-            <BackToTopButton></BackToTopButton>
         </div>
     )
 }

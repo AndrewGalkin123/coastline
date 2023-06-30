@@ -1,14 +1,9 @@
 import React from "react";
-import Header from "../../components/common/Header/Header";
-import Footer from "../../components/common/Footer/Footer";
 import "./PrivacyPolicy.css"
-import BackToTopButton from "../../components/BackToTopButton/BackToTopButton";
 
 const PrivacyPolicy = () => {
     return (
         <div className="privacy_policy">
-            <Header />
-
             <div className="content" style={{ maxWidth: "1290px", top: "100px", marginBottom: "150px" }}>
                 <h1>Политика конфиденциальности</h1>
                 <p>
@@ -70,9 +65,6 @@ const PrivacyPolicy = () => {
                     свяжитесь с нами по указанным контактным данным.
                 </p>
             </div>
-
-            <Footer />
-            <BackToTopButton></BackToTopButton>
         </div>
     );
 };

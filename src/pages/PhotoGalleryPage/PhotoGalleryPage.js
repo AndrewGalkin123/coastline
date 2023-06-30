@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./PhotoGalleryPage.css"
-import Header from "../../components/common/Header/Header";
-import Footer from "../../components/common/Footer/Footer";
 import odessaFerrisWheel from "../../assets/cultureImages/odessa-ferris-wheel.jpg"
-import BackToTopButton from "../../components/BackToTopButton/BackToTopButton";
 
 
 const PhotoGalleryPage = () => {
@@ -30,8 +27,6 @@ const PhotoGalleryPage = () => {
     };
     return (
         <div>
-            <Header></Header>
-
             <div
                 style={{
                     padding: "0 20px",
@@ -254,9 +249,6 @@ const PhotoGalleryPage = () => {
 
 
             </div>
-
-            <Footer></Footer>
-            <BackToTopButton></BackToTopButton>
         </div>
     )
 }
