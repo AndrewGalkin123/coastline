@@ -6,13 +6,13 @@ import "./AboutOdessa.css";
 
 const AboutOdessa = () => {
   const { currentLanguage } = useContext(LanguageContext);
-  const aboutTranslations = translations.aboutOdessa[currentLanguage];
+  const aboutOdessaTranslations = translations.aboutOdessa[currentLanguage];
 
   return (
     <div>
       <div className="title" style={{ top: "90px" }}>
         <hr />
-        <span>{aboutTranslations["informationAboutOdessa"]}</span>
+        <span>{aboutOdessaTranslations["informationAboutOdessa"]}</span>
       </div>
       <div
         className="content"
@@ -28,20 +28,20 @@ const AboutOdessa = () => {
           <img className="odessa_flag" src={odessaFlag} alt="odessaFlag" />
           <br />
           <div className="text">
-            <p>{aboutTranslations["welcomeToOdessa"]}</p>
+            <p>{aboutOdessaTranslations["welcomeToOdessa"]}</p>
             <br />
-            <p>{aboutTranslations["odessaHistory"]}</p>
+            <p>{aboutOdessaTranslations["odessaHistory"]}</p>
             <br />
-            <p>{aboutTranslations["websiteDescription"]}</p>
+            <p>{aboutOdessaTranslations["websiteDescription"]}</p>
             <br />
-            <p>{aboutTranslations["artAndCulture"]}</p>
+            <p>{aboutOdessaTranslations["artAndCulture"]}</p>
             <br />
-            <p>{aboutTranslations["gastronomicDelights"]}</p>
-            <p>{aboutTranslations["promenadeAlongTheSeaside"]}</p>
+            <p>{aboutOdessaTranslations["gastronomicDelights"]}</p>
+            <p>{aboutOdessaTranslations["promenadeAlongTheSeaside"]}</p>
             <br />
-            <p>{aboutTranslations["oddysseaGuide"]}</p>
+            <p>{aboutOdessaTranslations["oddysseaGuide"]}</p>
             <br />
-            <p>{aboutTranslations["welcomeToOdessaInspiration"]}</p>
+            <p>{aboutOdessaTranslations["welcomeToOdessaInspiration"]}</p>
           </div>
         </div>
       </div>
