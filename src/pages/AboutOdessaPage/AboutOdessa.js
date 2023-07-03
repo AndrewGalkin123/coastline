@@ -1,69 +1,52 @@
-import React from "react";
-import odessaFlag from "./odessaFlag.png"
-import "./AboutOdessa.css"
-
+import React, { useContext } from "react";
+import { LanguageContext } from "../../contexts/LanguageContext";
+import translations from "../../translations.json";
+import odessaFlag from "./odessaFlag.png";
+import "./AboutOdessa.css";
 
 const AboutOdessa = () => {
-    return (
-        <div>
-            <div className="title" style={{ top: "90px" }}>
-                <hr />
-                <span>Информация про Одессу</span>
-            </div>
-            <div className="content" style={{ maxWidth: "1400px", fontSize: "20px", color: "#515151", marginBottom: "120px", marginTop: "50px" }}>
-                <div className="about_odessa_block">
-                    <img className="odessa_flag" src={odessaFlag} alt="odessaFlag"></img>
-                    <br></br>
-                    <div className="text">
+  const { currentLanguage } = useContext(LanguageContext);
+  const aboutTranslations = translations.aboutOdessa[currentLanguage];
 
-                        <p>Добро пожаловать в Одессу – жемчужину Черного моря! Этот уникальный город,
-                            с его богатой историей и неповторимой атмосферой, приглашает вас на захватывающее путешествие,
-                            полное открытий и впечатлений.
-                        </p>
-                        <br></br>
-                        <p>
-                            История Одессы простирается на протяжении веков, и каждый уголок города отражает свой собственный эпизод этой богатой истории.
-                            Прогулка по историческому центру уносит вас во времена величественных зданий, узких переулков и романтических двориков.
-                            Одесский оперный театр, Потемкинская лестница, Дерибасовская улица – каждая достопримечательность рассказывает свою увлекательную историю.
-                        </p>
-                        <br></br>
-                        <p>Наш сайт Oddyssea создан, чтобы помочь вам раскрыть все тайны и прелести Одессы.
-                            Мы собрали для вас самую полезную и интересную информацию о городе –
-                            от его исторических достопримечательностей до уютных кафе и ресторанов, от местных традиций и культуры до
-                            прекрасных пляжей и развлечений.
-                        </p>
-                        <br></br>
-                        <p>Одесса – это также город искусства и культуры. Музеи, галереи, выставки, театры – здесь каждый найдет что-то по своему вкусу.
-                            Погрузитесь в мир искусства, посетите выставки современных художников или насладитесь оперным спектаклем в одном из
-                            самых красивых театров страны.
-                        </p>
-                        <br></br>
-                        <p>Не упустите возможность познакомиться с гастрономическими изысками Одессы.
-                            Местная кухня поразит вас разнообразием вкусов и ароматов. Попробуйте изысканные рыбные блюда, свежие морепродукты
-                            и настоящие одесские деликатесы.
-                            В ресторанах и кафе города вы сможете отведать уникальные блюда и насладиться гостеприимством одесской кухни.
-                        </p>
-                        <p>
-                            Отправьтесь на прогулку по Приморскому бульвару, наслаждаясь прекрасными видами Черного моря и архитектурой старых зданий.
-                            Загляните в местные магазины, где вы найдете уникальные сувениры и товары, отражающие дух Одессы.
-                        </p>
-                        <br></br>
-                        <p>Oddyssea – ваш проводник в этом захватывающем путешествии по Одессе.
-                            На нашем сайте вы найдете полезную информацию о городе, достопримечательностях, советы по путешествиям,
-                            культурным мероприятиям и многому другому. Мы собрали
-                            для вас самые интересные места, уникальные фотографии и вдохновляющие истории, чтобы помочь
-                            вам полностью погрузиться в атмосферу Одессы.
-                        </p>
-                        <br></br>
-                        <p>
-                            Добро пожаловать в Одессу – город, который станет для вас не только пунктом назначения, но и источником вдохновения и незабываемых впечатлений.
-                            Приготовьтесь к невероятным открытиям и приключениям вместе с Oddyssea!
-                        </p>
-                    </div>
-                </div>
-            </div>
+  return (
+    <div>
+      <div className="title" style={{ top: "90px" }}>
+        <hr />
+        <span>{aboutTranslations["informationAboutOdessa"]}</span>
+      </div>
+      <div
+        className="content"
+        style={{
+          maxWidth: "1400px",
+          fontSize: "20px",
+          color: "#515151",
+          marginBottom: "120px",
+          marginTop: "50px",
+        }}
+      >
+        <div className="about_odessa_block">
+          <img className="odessa_flag" src={odessaFlag} alt="odessaFlag" />
+          <br />
+          <div className="text">
+            <p>{aboutTranslations["welcomeToOdessa"]}</p>
+            <br />
+            <p>{aboutTranslations["odessaHistory"]}</p>
+            <br />
+            <p>{aboutTranslations["websiteDescription"]}</p>
+            <br />
+            <p>{aboutTranslations["artAndCulture"]}</p>
+            <br />
+            <p>{aboutTranslations["gastronomicDelights"]}</p>
+            <p>{aboutTranslations["promenadeAlongTheSeaside"]}</p>
+            <br />
+            <p>{aboutTranslations["oddysseaGuide"]}</p>
+            <br />
+            <p>{aboutTranslations["welcomeToOdessaInspiration"]}</p>
+          </div>
         </div>
-    )
-}
+      </div>
+    </div>
+  );
+};
 
 export default AboutOdessa;
