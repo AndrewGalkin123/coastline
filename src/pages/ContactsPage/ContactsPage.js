@@ -1,8 +1,14 @@
 import React from 'react';
 import './ContactsPage.css';
 import axios from 'axios';
+import { useContext } from "react";
+import { LanguageContext } from '../../contexts/LanguageContext';
+import translations from "../../translations.json"
 
 const ContactsPage = () => {
+  const { currentLanguage } = useContext(LanguageContext);
+  const contactsPageTranslations = translations.contactsPage[currentLanguage];
+
   const submitForm = async (e) => {
     e.preventDefault();
 
@@ -32,7 +38,7 @@ const ContactsPage = () => {
           <div className='contact-info'>
             <div className='item'>
               <i className='icon fas fa-home'></i>
-              Одесса, Украина
+              {contactsPageTranslations["location"]}
             </div>
             <div className='item'>
               <i className='icon fas fa-phone'></i>
@@ -44,14 +50,14 @@ const ContactsPage = () => {
             </div>
             <div className='item'>
               <i className='icon fas fa-clock'></i>
-              Пн - Пт 10:00 to 18:00 
+              {contactsPageTranslations["workTime"]}
             </div>
           </div>
           <form className='contact-form' onSubmit={submitForm}>
-            <input type='text' className='textb' placeholder='Ваше имя' name='name' />
-            <input type='email' className='textb' placeholder='Ваша почта' name='email' />
-            <textarea placeholder='Ваше сообщение' name='message' />
-            <input type='submit' className='btn' value='Отправить' />
+            <input type='text' className='textb' placeholder={contactsPageTranslations["yourNamePlaceHolder"]} name='name' />
+            <input type='email' className='textb' placeholder={contactsPageTranslations["yourEmailPlaceHolder"]} name='email' />
+            <textarea placeholder={contactsPageTranslations["yourMessagePlaceHolder"]} name='message' />
+            <input type='submit' className='btn' value={contactsPageTranslations["send"]} />
           </form>
         </div>
       </div>

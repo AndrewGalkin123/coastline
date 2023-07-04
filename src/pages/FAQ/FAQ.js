@@ -1,7 +1,12 @@
 import React, { useState } from "react";
 import "./FAQ.css";
+import { useContext } from "react";
+import { LanguageContext } from '../../contexts/LanguageContext';
+import translations from "../../translations.json"
 
 const FAQ = () => {
+  const { currentLanguage } = useContext(LanguageContext);
+  const faqTranslations = translations.faqPage[currentLanguage];
   const [activeAccordion, setActiveAccordion] = useState(null);
 
   const toggleAccordion = (index) => {
@@ -12,13 +17,13 @@ const FAQ = () => {
     <div>
       <div className="content" style={{ maxWidth: "1300px" }}>
         <div className="faq_wrapper">
-          <h1>Самые часто задаваемые вопросы</h1>
+          <h1>{faqTranslations["frequentlyAskedQuestions"]}</h1>
           <div className="faq">
             <button
               className={`accordion ${activeAccordion === 0 ? "active" : ""}`}
               onClick={() => toggleAccordion(0)}
             >
-              Что такое Oddyssea?
+              {faqTranslations["question1"]}
               <i className="fa-solid fa-chevron-down"></i>
             </button>
             <div
@@ -26,9 +31,7 @@ const FAQ = () => {
               style={{ display: activeAccordion === 0 ? "block" : "none" }}
             >
               <p>
-                Oddyssea - это онлайн-платформа, посвященная городу Одессе. Мы
-                предлагаем информацию о истории, культуре, достопримечательностях
-                и атмосфере города.
+              {faqTranslations["answer1"]}
               </p>
             </div>
           </div>
@@ -37,7 +40,7 @@ const FAQ = () => {
               className={`accordion ${activeAccordion === 1 ? "active" : ""}`}
               onClick={() => toggleAccordion(1)}
             >
-              Какая цель Oddyssea?
+              {faqTranslations["question2"]}
               <i className="fa-solid fa-chevron-down"></i>
             </button>
             <div
@@ -45,10 +48,7 @@ const FAQ = () => {
               style={{ display: activeAccordion === 1 ? "block" : "none" }}
             >
               <p>
-                Наша цель - предоставить посетителям всю необходимую информацию
-                об Одессе, чтобы помочь им планировать поездку, изучать историю
-                и культуру города, а также наслаждаться уникальной атмосферой
-                Одессы.
+              {faqTranslations["answer2"]}
               </p>
             </div>
           </div>
@@ -57,7 +57,7 @@ const FAQ = () => {
               className={`accordion ${activeAccordion === 2 ? "active" : ""}`}
               onClick={() => toggleAccordion(2)}
             >
-              Как я могу использовать Oddyssea?
+              {faqTranslations["question3"]}
               <i className="fa-solid fa-chevron-down"></i>
             </button>
             <div
@@ -65,11 +65,7 @@ const FAQ = () => {
               style={{ display: activeAccordion === 2 ? "block" : "none" }}
             >
               <p>
-                Вы можете использовать Oddyssea для получения информации о
-                достопримечательностях Одессы, ознакомления с историческими
-                фактами, изучения местной культуры, просмотра фотографий и
-                других материалов, а также для планирования своей поездки в
-                Одессу.
+              {faqTranslations["answer3"]}
               </p>
             </div>
           </div>
@@ -78,7 +74,7 @@ const FAQ = () => {
               className={`accordion ${activeAccordion === 3 ? "active" : ""}`}
               onClick={() => toggleAccordion(3)}
             >
-              Я хочу узнать больше о конкретной достопримечательности. Где я могу найти подробную информацию?
+              {faqTranslations["question4"]}
               <i className="fa-solid fa-chevron-down"></i>
             </button>
             <div
@@ -86,9 +82,7 @@ const FAQ = () => {
               style={{ display: activeAccordion === 3 ? "block" : "none" }}
             >
               <p>
-                На нашем сайте вы найдете отдельные страницы для каждой достопримечательности, где представлена
-                подробная информация, фотографии, история и другие интересные факты.
-                Выберите достопримечательность, которая вас интересует, и перейдите на соответствующую страницу.
+              {faqTranslations["answer4"]}
               </p>
             </div>
           </div>
@@ -97,7 +91,7 @@ const FAQ = () => {
               className={`accordion ${activeAccordion === 4 ? "active" : ""}`}
               onClick={() => toggleAccordion(4)}
             >
-              У меня есть собственные фотографии Одессы. Могу ли я поделиться ими на Oddyssea?
+              {faqTranslations["question5"]}
               <i className="fa-solid fa-chevron-down"></i>
             </button>
             <div
@@ -105,9 +99,7 @@ const FAQ = () => {
               style={{ display: activeAccordion === 4 ? "block" : "none" }}
             >
               <p>
-                Конечно! Мы будем рады увидеть ваш вклад. Вы можете отправить свои фотографии Одессы на нашу электронную почту
-                oddyssea@gmail.com с указанием вашего имени и краткого описания фотографий. Мы рассмотрим возможность
-                размещения их на сайте.
+              {faqTranslations["answer5"]}
               </p>
             </div>
           </div>
@@ -116,7 +108,7 @@ const FAQ = () => {
               className={`accordion ${activeAccordion === 5 ? "active" : ""}`}
               onClick={() => toggleAccordion(5)}
             >
-              Как связаться с командой Oddyssea?
+             {faqTranslations["question6"]}
               <i className="fa-solid fa-chevron-down"></i>
             </button>
             <div
@@ -124,8 +116,7 @@ const FAQ = () => {
               style={{ display: activeAccordion === 5 ? "block" : "none" }}
             >
               <p>
-                Если у вас есть вопросы, предложения или отзывы, вы можете связаться с нами,
-                заполнив форму обратной связи на нашем сайте. Мы постараемся ответить вам в кратчайшие сроки.
+              {faqTranslations["answer6"]}
               </p>
             </div>
           </div>
@@ -134,7 +125,7 @@ const FAQ = () => {
               className={`accordion ${activeAccordion === 6 ? "active" : ""}`}
               onClick={() => toggleAccordion(6)}
             >
-              Какая информация доступна на странице "История Одессы"?
+              {faqTranslations["question7"]}
               <i className="fa-solid fa-chevron-down"></i>
             </button>
             <div
@@ -142,8 +133,7 @@ const FAQ = () => {
               style={{ display: activeAccordion === 6 ? "block" : "none" }}
             >
               <p>
-                На странице "История Одессы" вы найдете увлекательные рассказы о прошлом города, его основании, ключевых событиях,
-                известных личностях и многое другое. Мы стараемся представить историю Одессы в интересной и доступной форме.
+              {faqTranslations["answer7"]}
               </p>
             </div>
           </div>
@@ -152,7 +142,7 @@ const FAQ = () => {
               className={`accordion ${activeAccordion === 7 ? "active" : ""}`}
               onClick={() => toggleAccordion(7)}
             >
-              Я планирую поездку в Одессу. Какие места стоит посетить?
+             {faqTranslations["question8"]}
               <i className="fa-solid fa-chevron-down"></i>
             </button>
             <div
@@ -160,8 +150,7 @@ const FAQ = () => {
               style={{ display: activeAccordion === 7 ? "block" : "none" }}
             >
               <p>
-                Мы составили список рекомендуемых мест для посещения в Одессе. На странице "Лучшие места" вы найдете информацию о самых популярных
-                достопримечательностях, парках, пляжах, музеях и других интересных местах, которые стоит посетить во время вашей поездки.
+              {faqTranslations["answer8"]}
               </p>
             </div>
           </div>
@@ -170,7 +159,7 @@ const FAQ = () => {
               className={`accordion ${activeAccordion === 8 ? "active" : ""}`}
               onClick={() => toggleAccordion(8)}
             >
-              Я хочу поделиться своим опытом о посещении Одессы. Как я могу сделать это?
+              {faqTranslations["question9"]}
               <i className="fa-solid fa-chevron-down"></i>
             </button>
             <div
@@ -178,8 +167,7 @@ const FAQ = () => {
               style={{ display: activeAccordion === 8 ? "block" : "none" }}
             >
               <p>
-                Мы всегда рады услышать отзывы и рассказы о поездках в Одессу. Вы можете отправить свой отзыв на нашу электронную
-                почту oddyssea@gmail.com или же на форме обратной связи с указанием вашего имени и вашего опыта. Мы можем опубликовать ваш отзыв на нашем сайте.
+              {faqTranslations["answer9"]}
               </p>
             </div>
           </div>
@@ -188,7 +176,7 @@ const FAQ = () => {
               className={`accordion ${activeAccordion === 9 ? "active" : ""}`}
               onClick={() => toggleAccordion(9)}
             >
-              Какие языки доступны на Oddyssea?
+              {faqTranslations["question10"]}
               <i className="fa-solid fa-chevron-down"></i>
             </button>
             <div
@@ -196,8 +184,7 @@ const FAQ = () => {
               style={{ display: activeAccordion === 9 ? "block" : "none" }}
             >
               <p>
-                Наши материалы доступны на нескольких языках, включая английский, украинский и русский.
-                Вы можете выбрать предпочитаемый язык на сайте.
+              {faqTranslations["answer10"]}
               </p>
             </div>
           </div>
@@ -206,7 +193,7 @@ const FAQ = () => {
               className={`accordion ${activeAccordion === 10 ? "active" : ""}`}
               onClick={() => toggleAccordion(10)}
             >
-             Какие музеи стоит посетить в Одессе?
+              {faqTranslations["question11"]}
               <i className="fa-solid fa-chevron-down"></i>
             </button>
             <div
@@ -214,8 +201,7 @@ const FAQ = () => {
               style={{ display: activeAccordion === 10 ? "block" : "none" }}
             >
               <p>
-              В Одессе есть множество интересных музеев, включая Одесский литературный музей, Музей истории Одессы, 
-              Художественный музей и другие. Мы предоставляем информацию о каждом музее, его экспозициях и рабочих часах.
+              {faqTranslations["answer11"]}
               </p>
             </div>
           </div>
@@ -224,7 +210,7 @@ const FAQ = () => {
               className={`accordion ${activeAccordion === 11 ? "active" : ""}`}
               onClick={() => toggleAccordion(11)}
             >
-              Какие пляжи в Одессе я могу посетить?
+              {faqTranslations["question12"]}
               <i className="fa-solid fa-chevron-down"></i>
             </button>
             <div
@@ -232,9 +218,7 @@ const FAQ = () => {
               style={{ display: activeAccordion === 11 ? "block" : "none" }}
             >
               <p>
-              В Одессе есть множество пляжей, включая Ланжерон, Аркадия, Дельфин, 
-              Золотой берег и другие. На нашем сайте вы найдете подробную информацию о каждом пляже,
-               его расположении, условиях и удобствах.
+                {faqTranslations["answer12"]}
               </p>
             </div>
           </div>
