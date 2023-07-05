@@ -1,11 +1,16 @@
 import React, { useState, useEffect } from "react";
 import odessaFerrisWheel from "../../../assets/cultureImages/odessa-ferris-wheel.jpg";
-
 import squareType from "../../../assets/icons/squares.png";
 import listType from "../../../assets/icons/free-icon-checklist-876749.png";
 import CultureListType from "../CultureBlockListType/CultureListType";
+import { useContext } from "react";
+import { LanguageContext } from "../../../contexts/LanguageContext"
+import translations from "../../../translations.json"
+
 
 const CultureBlock = () => {
+  const { currentLanguage } = useContext(LanguageContext);
+  const cultureBlockTranslations  = translations.culturePage[currentLanguage];
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [showCultureListType, setShowCultureListType] = useState(false);
 
@@ -23,9 +28,9 @@ const CultureBlock = () => {
 
   const getTitleText = () => {
     if (windowWidth <= 500) {
-      return "360° Фото";
+      return cultureBlockTranslations["shortTitle"];
     } else {
-      return "360° Фото.Культура";
+      return cultureBlockTranslations["title"];
     }
   };
 

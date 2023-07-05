@@ -4,8 +4,13 @@ import "./HistoryBlock.css";
 import squareType from "../../../assets/icons/squares.png";
 import listType from "../../../assets/icons/free-icon-checklist-876749.png";
 import HistoryBlockListType from "../HistoryBlockListType/HistoryListType";
+import { useContext } from "react";
+import { LanguageContext } from "../../../contexts/LanguageContext"
+import translations from "../../../translations.json"
 
 const HistoryBlock = () => {
+  const { currentLanguage } = useContext(LanguageContext);
+  const historyBlockTranslations  = translations.historyPage[currentLanguage];
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [showHistoryListType, setShowHistoryListType] = useState(false);
 
@@ -23,9 +28,9 @@ const HistoryBlock = () => {
 
   const getTitleText = () => {
     if (windowWidth <= 500) {
-      return "360° Фото";
+      return historyBlockTranslations["shortTitle"];
     } else {
-      return "360° Фото.История";
+      return historyBlockTranslations["title"];
     }
   };
 

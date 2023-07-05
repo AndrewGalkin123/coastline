@@ -1,9 +1,14 @@
 import React, { useState, useEffect } from "react";
 import "./PhotoGalleryPage.css"
 import odessaFerrisWheel from "../../assets/cultureImages/odessa-ferris-wheel.jpg"
+import { useContext } from "react";
+import { LanguageContext } from "../../contexts/LanguageContext"
+import translations from "../../translations.json"
 
 
 const PhotoGalleryPage = () => {
+    const { currentLanguage } = useContext(LanguageContext);
+    const photoGalleryPageTranslations  = translations.photoGalleryPage[currentLanguage];
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
     useEffect(() => {
@@ -20,9 +25,9 @@ const PhotoGalleryPage = () => {
 
     const getTitleText = () => {
         if (windowWidth <= 500) {
-            return "Лучшие коллекции";
+            return photoGalleryPageTranslations["shortTitle"];
         } else {
-            return "360° Фотогалерея.Лучшие коллекции";
+            return photoGalleryPageTranslations["title"];
         }
     };
     return (

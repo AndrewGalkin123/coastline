@@ -298,5 +298,47 @@
       "termsOfUse": "Умови використання",
       "copyright": "Авторські права"
     }
+  },
+  "culturePage": {
+    "en": { 
+      "shortTitle": "360° Photo",
+      "title": "360° Photo.Culture"
+    },
+    "ru": { 
+      "title": "360° Фото.Культура",
+      "shortTitle": "360° Фото"
+    },
+    "uk": { 
+      "title": "360° Фото.Культура",
+      "shortTitle": "360° Фото"
+    }
+  },
+  "historyPage": { 
+    "en": { 
+      "shortTitle": "360° Photo",
+      "title": "360° Photo.History"
+    },
+    "ru": { 
+      "title": "360° Фото.История",
+      "shortTitle": "360° Фото"
+    },
+    "uk": { 
+      "title": "360° Фото.Історія",
+      "shortTitle": "360° Фото"
+    }
+  },
+  "photoGalleryPage": { 
+    "en": { 
+      "shortTitle": "Best Collections",
+      "title": "360° Photo.Best Collections"
+    },
+    "ru": { 
+      "title": "360° Фотогалерея.Лучшие коллекции",
+      "shortTitle": "Лучшие коллекции"
+    },
+    "uk": { 
+      "title": "360° Фотогалерея.Кращі колекції",
+      "shortTitle": "Кращі колекції"
+    }
   }
 }
