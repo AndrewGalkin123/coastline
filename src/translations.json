@@ -263,5 +263,40 @@
       "question12": "Какие пляжи в Одессе я могу посетить?",
       "answer12": "В Одессе есть множество пляжей, включая Ланжерон, Аркадия, Дельфин, Золотой берег и другие. На нашем сайте вы найдете подробную информацию о каждом пляже,его расположении, условиях и удобствах."
     }
+  },
+  "burgerMenu": { 
+    "en": { 
+      "aboutUs": "About Us",
+      "projectHistory":"Project History",
+      "informationAboutOdessa":"Information About Odessa",
+      "ourTeam": "Our Team",
+      "usefulLinks": "Useful Links",
+      "feedback": "Contact us",
+      "frequentlyAskedQuestions": "Questions and answers (FAQ)",
+      "termsOfUse": "Terms of Use",
+      "copyright": "Copyright"
+    },
+    "ru": { 
+      "aboutUs": "О нас",
+      "projectHistory": "История проекта",
+      "informationAboutOdessa": "Информация про Одессу",
+      "ourTeam": "Наша команда",
+      "usefulLinks": "Полезные ссылки",
+      "feedback": "Связаться с нами",
+      "frequentlyAskedQuestions": "Вопросы и ответы (FAQ)",
+      "termsOfUse": "Условия Использования",
+      "copyright": "Авторские права"
+    },
+    "uk": { 
+      "aboutUs": "Про нас",
+      "projectHistory": "Історія проекту",
+      "informationAboutOdessa": "Інформація про Одесу",
+      "ourTeam": "Наша команда",
+      "usefulLinks": "Корисні посилання",
+      "feedback": "Зв'язатися з нами",
+      "frequentlyAskedQuestions": "Питання та відповіді (FAQ)",
+      "termsOfUse": "Умови використання",
+      "copyright": "Авторські права"
+    }
   }
 }

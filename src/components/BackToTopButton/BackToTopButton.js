@@ -20,7 +20,7 @@ class BackToTopButton extends React.Component {
     }
     render() {
         return (
-            <div id="back_to_top" class="back-to-top"> 
+            <div id="back_to_top" className="back-to-top"> 
               <svg style={{transform: "rotate(270deg)", width:"30", height: "30"}} viewBox="0 0 24 24"><path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" /></svg>
             </div>
         )
